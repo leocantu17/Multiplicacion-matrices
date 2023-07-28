@@ -18,8 +18,8 @@ function multiplicarMatrices(){
 else if(colsA!=rowsB){
     alert("No se puede multiplicar esta matriz")
 }
-else{
 
+else{
 for(let i=0;i<rowsA;i++){
     matrizRes[i]=[];
     for(let j=0;j<colsB;j++){
@@ -30,9 +30,9 @@ for(let i=0;i<rowsA;i++){
     matrizRes[i][j]=suma;
   }
 }
-for(let i=0;i<matrizRes.length;i++){
+for(let i=0;i<rowsA;i++){
     
-    for (let j=0;j<matrizRes.length;j++){
+    for (let j=0;j<colsB;j++){
 document.getElementById('matrizresultado').value+=matrizRes[i][j]+" ";
        
     }
